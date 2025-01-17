@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Cost Report: flavapogi.net</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin-top: 30px;
+    }
+    .table th, .table td {
+      text-align: center;
+      vertical-align: middle;
+    }
+    .section-header {
+      background-color: #046655;
+      color: white;
+      padding: 12px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .total-cost {
+      background-color: #f0f8ff;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .notes {
+      margin-top: 30px;
+    }
+    .footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 12px;
+      background-color: #046655;
+      color: white;
+      border-radius: 5px;
+    }
+    .icon {
+      font-size: 1.3rem;
+      margin-right: 10px;
+    }
+    .table th i, .table td i {
+      margin-right: 8px;
+    }
+    .table td {
+      padding: 12px;
+    }
+    .table-bordered {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .thead-dark th {
+      background-color: #343a40;
+      color: white;
+    }
+    .list-icon {
+      font-size: 1.2rem;
+      color: #046655;
+      margin-right: 10px;
+    }
+    .notes ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .notes ul li {
+      margin-bottom: 10px;
+    }
+    /* Responsive Styles */
+    @media (max-width: 767px) {
+      .table th, .table td {
+        font-size: 0.9em;
+        padding: 8px;
+      }
+      .icon {
+        font-size: 1.1rem;
+      }
+      .section-header {
+        font-size: 1.1rem;
+        padding: 10px;
+      }
+      .footer p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .table th, .table td {
+        font-size: 0.8em;
+        padding: 6px;
+      }
+      .section-header {
+        font-size: 1rem;
+        padding: 8px;
+      }
+      .icon {
+        font-size: 1rem;
+      }
+      .footer p {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center my-5">
+    <i class="fas fa-chart-line icon"></i> Project Cost Report: flavapogi.net
+  </h1>
+  
+  <!-- Overview Section -->
+  <div class="section-header mb-4">
+    <h3><i class="fas fa-info-circle icon"></i> Overview <i class="fas fa-info-circle icon"></i></h3>
+  </div>
+  <p><i class="fas fa-clipboard-list icon"></i> This report outlines the detailed cost breakdown for developing <strong>flavapogi.net</strong>, a web and mobile app system for managing mess services for students, admins, and mentors. The system includes features like QR code integration, Firebase-based authentication, payment gateway, and food management. The development is led by Amresh Bhuyan, a full-stack developer.</p>
+  
+  <!-- 1. Development Charges -->
+  <div class="section-header mb-4">
+    <h3><i class="fas fa-cogs icon"></i> 1. Development Charges <i class="fas fa-cogs icon"></i></h3>
+  </div>
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th><i class="fas fa-cogs icon"></i> Component</th>
+        <th><i class="fas fa-money-bill-wave icon"></i> Charge (₹)</th>
+        <th><i class="fas fa-calendar icon"></i> Type</th>
+        <th><i class="fas fa-info-circle icon"></i> Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><i class="fas fa-globe icon"></i> Domain & Hosting Setup</td>
+        <td>3000</td>
+        <td>Per Year</td>
+        <td>The cost includes setting up a domain (₹1239) and hosting on Firebase Blaze Plan (∼₹1761/year for scaling).</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-users-cog icon"></i> Authentication System</td>
+        <td>5000</td>
+        <td>One-Time</td>
+        <td>Implementation of Firebase Authentication for secure user login using email and Google accounts.</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-laptop-code icon"></i> Web App Development</td>
+        <td>20,000</td>
+        <td>One-Time</td>
+        <td>Creating a responsive web app for managing food items, menus, QR codes, and payments.</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-mobile-alt icon"></i> Mobile App Development</td>
+        <td>25,000</td>
+        <td>One-Time</td>
+        <td>Developing mobile apps for iOS and Android using React Native for on-the-go access to the system.</td>
+      </tr>
+      <tr>
+        <td><i class="fab fa-apple icon"></i> iOS App Store Hosting</td>
+        <td>8900</td>
+        <td>Per Year</td>
+        <td>Annual fee for an Apple Developer Program subscription to host the iOS app on the App Store.</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-server icon"></i> Backend Development</td>
+        <td>15,000</td>
+        <td>One-Time</td>
+        <td>Setting up Firebase services (Firestore, Realtime Database, Cloud Functions) for data storage and logic.</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-credit-card icon"></i> Payment Gateway Integration</td>
+        <td>8000</td>
+        <td>One-Time</td>
+        <td>Adding and configuring a secure payment gateway like Razorpay or Stripe for handling transactions.</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-qrcode icon"></i> QR Code Integration</td>
+        <td>5000</td>
+        <td>One-Time</td>
+        <td>Implementing QR code functionality for food scanning and payment verification.</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-paint-brush icon"></i> UI/UX Design</td>
+        <td>10,000</td>
+        <td>One-Time</td>
+        <td>Designing an intuitive and professional user interface for both web and mobile platforms.</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-tools icon"></i> Testing & Deployment</td>
+        <td>7000</td>
+        <td>One-Time</td>
+        <td>Testing the system for bugs and errors, followed by deployment to Firebase Hosting and app stores.</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-life-ring icon"></i> Additional Maintenance</td>
+        <td>12,500</td>
+        <td>2 Months 15 Days</td>
+        <td>Maintenance post-launch for updates, bug fixes, and support.</td>
+      </tr>
+      <tr class="total-cost">
+        <td colspan="3"><i class="fas fa-total icon"></i> Total Development Charges</td>
+        <td>₹1,11,400</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- 2. Developer Cost per Time Invested -->
+  <div class="section-header mb-4">
+    <h3><i class="fas fa-clock icon"></i> 2. Developer Cost per Time Invested <i class="fas fa-clock icon"></i></h3>
+  </div>
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th><i class="fas fa-cogs icon"></i> Component</th>
+        <th><i class="fas fa-clock icon"></i> Time (Hours)</th>
+        <th><i class="fas fa-money-bill-wave icon"></i> Hourly Rate (₹)</th>
+        <th><i class="fas fa-money-check-alt icon"></i> Cost (₹)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><i class="fas fa-globe icon"></i> Domain & Hosting Setup</td>
+        <td>5</td>
+        <td>500</td>
+        <td>2500</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-users-cog icon"></i> Authentication System</td>
+        <td>10</td>
+        <td>500</td>
+        <td>5000</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-laptop-code icon"></i> Web App Development</td>
+        <td>40</td>
+        <td>500</td>
+        <td>20,000</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-mobile-alt icon"></i> Mobile App Development</td>
+        <td>50</td>
+        <td>500</td>
+        <td>25,000</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-server icon"></i> Backend Development</td>
+        <td>30</td>
+        <td>500</td>
+        <td>15,000</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-credit-card icon"></i> Payment Gateway Integration</td>
+        <td>16</td>
+        <td>500</td>
+        <td>8000</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-qrcode icon"></i> QR Code Integration</td>
+        <td>10</td>
+        <td>500</td>
+        <td>5000</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-paint-brush icon"></i> UI/UX Design</td>
+        <td>20</td>
+        <td>500</td>
+        <td>10,000</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-tools icon"></i> Testing & Deployment</td>
+        <td>14</td>
+        <td>500</td>
+        <td>7000</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-life-ring icon"></i> Additional Maintenance</td>
+        <td>30</td>
+        <td>500</td>
+        <td>15,000</td>
+      </tr>
+      <tr class="total-cost">
+        <td colspan="3"><i class="fas fa-dollar-sign icon"></i> Total Developer Cost</td>
+        <td>₹1,12,500</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- 3. Total Project Cost -->
+  <div class="section-header mb-4">
+    <h3><i class="fas fa-dollar-sign icon"></i> 3. Total Project Cost <i class="fas fa-dollar-sign icon"></i></h3>
+  </div>
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th><i class="fas fa-cogs icon"></i> Category</th>
+        <th><i class="fas fa-money-check-alt icon"></i> Cost (₹)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><i class="fas fa-clock icon"></i> Developer Cost per Time</td>
+        <td>₹1,12,500</td>
+      </tr>
+      <tr>
+        <td><i class="fas fa-cogs icon"></i> Development Charges</td>
+        <td>₹1,11,400</td>
+      </tr>
+      <tr class="total-cost">
+        <td><i class="fas fa-dollar-sign icon"></i> Overall Total Cost</td>
+        <td>₹2,23,900</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- 4. Notes -->
+  <div class="notes">
+    <h4><i class="fas fa-sticky-note icon"></i> 4. Notes <i class="fas fa-sticky-note icon"></i></h4>
+    <ul>
+      <li><i class="fas fa-calendar icon"></i><strong>Per Year Costs:</strong> Domain & Hosting: ₹3000/year (Firebase Blaze Plan and domain renewal). iOS App Store Hosting: ₹8900/year.</li>
+      <li><i class="fas fa-calendar-check icon"></i><strong>One-Time Costs:</strong> Development charges, including authentication, app development, backend setup, and QR code integration.</li>
+      <li><i class="fas fa-cogs icon"></i><strong>Additional Maintenance:</strong> Post-launch maintenance and support for 2 months 15 days (₹12,500).</li>
+      <li><i class="fas fa-cogs icon"></i><strong>Optional Maintenance:</strong> Post-development maintenance services (updates, bug fixes, feature additions) are offered at ₹5000/month.</li>
+    </ul>
+  </div>
+  
+  <!-- Footer -->
+  <div class="footer">
+    <p><i class="fas fa-copyright icon"></i> © 2025 Amresh Bhuyan - aedia.in</p>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
